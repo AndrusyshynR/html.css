@@ -1,0 +1,163 @@
+body,ul{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-color: #796c6c;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    border-bottom: 2px solid rgb(216, 18, 11);
+    padding: 15px;
+}
+#header-wrap{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+header ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header ul li a{
+    display: flex;
+    padding: 10px 15px;
+    background: rgb(214, 24, 24);
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 5px;
+    display: block;
+}
+
+header ul li a:hover{
+    background: green;
+}
+
+#logo img{
+    max-width: 170px;
+}
+
+/*
+content stayls
+*/
+
+#content-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content{
+    width: 70%;
+    padding: 15px 15px 15px 0;
+}
+
+#sidebar{
+    width: 30%;
+    padding: 15px 0 15px 15px;
+}
+
+#content, #sidebar{
+    box-sizing: border-box;
+}
+
+.border{
+    box-shadow: 0 0 4px 2px rgb(0, 0, 0);
+    padding: 15px;
+    min-height: 600px;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .article{
+    width: 50%;
+}
+
+#gallery img{
+    max-width: 100%;
+}
+
+#gallery .article-wrap{
+    margin: 15px;
+    box-shadow: 0 0 6px 3px rgb(211, 50, 38);
+    padding: 10px;
+    text-align: center;
+}
+
+#gallery .article-wrap h4{
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    
+}
+
+/* sidbare */
+
+.list{
+    box-shadow: 0 0 3px 2px rgb(211, 50, 38);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.list a{
+    text-decoration: none;
+    color: black;
+}
+
+.list h3{
+    margin: 0 0 5px 0 ;
+}
+
+footer{
+    background: rgb(68, 64, 63);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 26px;
+}
+
+@media(max-width: 1060px){
+    #content-wrap{
+        margin: 0 15px;
+    }
+}
+
+@media(max-width: 800px){
+    header{
+        width: 100%;
+        padding: 0 0 15px 0;
+    }
+
+    header ul li, #logo{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .border{
+        min-height: 0;
+    }
+}
+
